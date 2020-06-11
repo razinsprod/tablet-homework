@@ -22,14 +22,38 @@ header {
 
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:786px) {
   header {
     width: 500px;
     background: rgba(0, 0, 0, 0.4);
     margin-top: 0;
     margin-bottom: 52px;
+    padding: 28px;
   }
 }
+.toggle {
+
+width: 18px;
+height: 10px;
+margin-left: 266px;
+display: none;
+}
+
+@media screen and (max-width:425px) {
+  .toggle {
+  width:22px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  }
+  .rectangle2 {
+    background: #E5E5E5;
+  }
+ #top-menu {
+   display: none;
+ }
+}
+
 
 
 #logo {

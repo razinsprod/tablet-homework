@@ -1,0 +1,208 @@
+body {
+  background-image: url('../images/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+/*
+#logo {
+
+  position: relative;
+  top: 50px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  max-width: 1139px;
+  margin: 38px auto 0 auto;
+
+}
+
+@media screen and (max-width:768px) {
+  header {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 0;
+    margin-bottom: 52px;
+  }
+}
+
+
+#logo {
+/*  position: absolute;
+  bottom: 50px; */ /* горизонтально в пикселях */
+/*  right: 50px; *//* вертикально в пикселях */
+/*  position: fixed; relative; absolute; */ /* позиция названия "Desing studio" остается в одном месте без изменений */
+/*   position: absolute;
+  top: 39px;
+  left: 144px;  */
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+
+}
+
+#top-menu { /* #- стили */
+
+  float:right;
+}
+
+#top-menu a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 22px;
+
+  color: #FFFFFF;
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+
+#top-menu img, #top-menu svg {
+  vertical-align: middle;
+
+}
+
+.instagram-icon::before/*after*/ {
+  content:url('../images/icon-instagram.svg')
+}
+
+/*.red path {
+  fill: red;
+}*/
+
+.sign-header {
+  position: relative;
+  top: -39px;
+  left: 20px;
+  right: 21px;
+  width: 324px;
+  height: 150px;
+  background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+
+}
+
+.sign-header h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2px;
+  padding-top: 31px;
+  text-align:center;
+
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+
+.sign-icons {
+  margin-top:36px;
+  text-align: center;
+}
+
+.sign-icons a {
+  margin-left: 18px;
+  margin-right: 18px;
+  /* margin: 0 18px; */ /* Либо можно так, сверху и снизу по 0, справа и слева по 18px */
+}
+
+.sign-clasical{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: center;
+  margin-top: -7px;
+  margin-bottom: 33px;
+
+}
+
+#sign-up form label {
+margin-left:26px;
+width: 28px;
+
+}
+
+
+#sign-up form input {
+  width: 269px;
+  margin-left: 11px;
+  padding: 0;
+  margin-bottom: 46px;
+  padding: 0;
+}
+/*
+form elements style
+*/
+#sign-up {
+  background-color: white;
+  width: 365px;
+  min-height: 509px;
+  margin: 160px auto 0 auto;
+}
+
+.underline {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.sub {
+
+  background: transparent;
+  border: none;
+  color: #9C27B0;
+  display: flex;
+  margin: -2px auto 0 auto;
+
+}
+
+footer {
+  width: 1136px;
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Объединение и ставит в строчку в одну навигационую панель*/
+#foot-menu a, footer p{
+ color:#fff;
+ line-height: 14px;
+
+}
+
+/*Последний селектор всегда главный */
+
+
+#foot-menu a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-right: 34px;
+}
+
+  /* color: #FFFFFF !important */ /* Самый гланый */
+
+footer p {
+
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+
+  /* color: #FFFFFF; */
+}

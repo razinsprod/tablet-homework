@@ -50,32 +50,9 @@ display: none;
     background: #E5E5E5;
   }
 
-  @media screen and (max-width:425px) {
-    .rectange1 {
-      width: 22px;
-      height: 2px;
-      background: #FFFFFF;
-    }
-    }
-
-    @media screen and (max-width:425px) {
-      .rectange2 {
-        width: 22px;
-        height: 2px;
-        margin-top: 4px;
-        background: #FFFFFF;
-      }
-      }
-
-      @media screen and (max-width:425px) {
-        .rectange3 {
-          width: 22px;
-          height: 2px;
-          margin-top: 4px;
-          background: #FFFFFF;
-        }
-        }
-
+  .menu {
+    content:url('../images/menu.png')
+  }
 
  #top-menu {
    display: none;

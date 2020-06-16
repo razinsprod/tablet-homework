@@ -19,46 +19,39 @@ a {
 header {
   max-width: 1139px;
   margin: 38px auto 0 auto;
+  display:flex;
+  justify-content: space-between;
 
 }
 
 @media screen and (max-width:786px) {
   header {
-    width: 500px;
+    width: 100%;
     background: rgba(0, 0, 0, 0.4);
     margin-top: 0;
     margin-bottom: 52px;
     padding: 28px;
   }
 }
-.toggle {
 
-width: 18px;
-height: 10px;
-margin-left: 266px;
-display: none;
-}
 
 @media screen and (max-width:425px) {
-  .toggle {
-  width:22px;
-  height: 14px;
-  background: rgba(0, 0, 0, 0.4);
-  display: inline-block;
-  }
-  .rectangle2 {
-    background: #E5E5E5;
-  }
 
+  header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    display: flex;
+
+}
   .menu {
-    content:url('../images/menu.png')
+    content:url('../images/menu.png');
   }
 
  #top-menu {
    display: none;
  }
 }
-
 
 
 #logo {
@@ -204,6 +197,27 @@ footer {
   margin: 72px auto 0;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width:786px) {
+  footer {
+    width: 471px;
+    margin-top: 0;
+    margin-top: 74px;
+    padding: 31px;
+    display: block;
+  }
+  footer p {
+      text-align: center;
+  }
+}
+
+@media screen and (max-width:324px) {
+  footer {
+    width: 324px;
+    margin-top: 66px;
+    padding: 28px;
+  }
 }
 
 /* Объединение и ставит в строчку в одну навигационую панель*/

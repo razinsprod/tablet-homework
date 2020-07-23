@@ -1,0 +1,266 @@
+$default_font: Roboto;
+$text_align: center;
+$justify-content: space-between;
+$HM: #top-memu;
+
+@mixin default-style{
+  font-family: $default_font;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin size ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+body {
+  background: {
+  image: url('../images/bg.png');
+  repeat: no-repeat;
+  size: cover;
+  margin: auto;
+  }
+}
+
+/*
+#logo {
+
+  position: relative;
+  top: 50px;
+} */
+
+a {
+  text-decoration: none;
+}
+
+header {
+  max-width: 1139px;
+  margin: 38px auto 0 auto;
+  display:flex;
+  justify-content: $justify-content;
+
+}
+
+@media screen and (max-width:786px) {
+  header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 0;
+    margin-bottom: 52px;
+    padding: 28px;
+  }
+}
+
+
+@media screen and (max-width:425px) {
+
+  header{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px;
+    display: flex;
+
+}
+  .menu {
+    content:url('../images/menu.png');
+  }
+
+ #top-menu {
+   display: none;
+ }
+}
+
+
+#logo {
+/*  position: absolute;
+  bottom: 50px; */ /* горизонтально в пикселях */
+/*  right: 50px; *//* вертикально в пикселях */
+/*  position: fixed; relative; absolute; */ /* позиция названия "Desing studio" остается в одном месте без изменений */
+/*   position: absolute;
+  top: 39px;
+  left: 144px;  */
+  display: inline-block;
+  color: white;
+  font-size: 18px;
+
+}
+
+#top-menu { /* #- стили */
+
+  float:right;
+a {
+  @include default-style;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 22px;
+
+  color: #FFFFFF;
+  }
+}
+
+.download-icon {
+  margin-right: 6px;
+}
+
+#top-menu img, #top-menu svg {
+  vertical-align: middle;
+
+}
+
+.instagram-icon::before/*after*/ {
+  content:url('../images/icon-instagram.svg')
+}
+
+/*.red path {
+  fill: red;
+}*/
+
+.sign-header {
+  position: relative;
+  top: -39px;
+  left: 20px;
+  right: 21px;
+  @include size(324px, 150px);
+  background: linear-gradient(90deg, #AB47BC 0%, #7B1FA2 100%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.12), 0px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+
+  h1 {
+  font-family: $default_font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2px;
+  padding-top: 31px;
+  text-align:$text_align;
+
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+  }
+}
+
+.sign-icons {
+  margin-top:36px;
+  text-align: $text_align;
+
+  a {
+  margin-left: 18px;
+  margin-right: 18px;
+  /* margin: 0 18px; */ /* Либо можно так, сверху и снизу по 0, справа и слева по 18px */
+  }
+}
+
+  .sign-clasical{
+  font-family: $default_font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  text-align: $text_align;
+  margin-top: -7px;
+  margin-bottom: 33px;
+
+}
+
+#sign-up form {
+    label {
+      margin-left:26px;
+      width: 28px;
+    }
+    input {
+      width: 269px;
+      margin-left: 11px;
+      padding: 0;
+      margin-bottom: 46px;
+      padding: 0;
+    }
+}
+/*
+form elements style
+*/
+#sign-up {
+  background-color: grey;
+  width: 365px;
+  min-height: 509px;
+  margin: 160px auto 0 auto;
+}
+
+.underline {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.sub {
+
+  background: transparent;
+  border: none;
+  color: #9C27B0;
+  display: flex;
+  margin: -2px auto 0 auto;
+
+}
+
+footer {
+  width: 1136px;
+  margin: 72px auto 0;
+  display: flex;
+  justify-content: $justify-content;
+
+p {
+
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 11px;
+    color:#fff;
+    line-height: 14px;
+
+    /* color: #FFFFFF; */
+  }
+}
+
+@media screen and (max-width:786px) {
+  footer {
+    width: 471px;
+    margin-top: 0;
+    margin-top: 74px;
+    padding: 31px;
+    display: block;
+  }
+  footer p {
+      text-align: $text_align;
+  }
+}
+
+@media screen and (max-width:324px) {
+  footer {
+    width: 324px;
+    margin-top: 66px;
+    padding: 28px;
+  }
+}
+
+/* Объединение и ставит в строчку в одну навигационую панель*/
+#foot-menu {
+  p {
+   color:#fff;
+   line-height: 14px;
+}
+
+/*Последний селектор всегда главный */
+  a {
+    font-family: $default_font;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 34px;
+    color:#fff;
+    line-height: 14px;
+    }
+  }
+
+  /* color: #FFFFFF !important */ /* Самый гланый */

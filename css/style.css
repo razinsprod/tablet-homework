@@ -26,16 +26,14 @@ header {
     background: rgba(0, 0, 0, 0.4);
     margin-top: 0;
     margin-bottom: 52px;
-    padding: 28px; }
-   }
-   
+    padding: 28px; } }
 @media screen and (max-width: 425px) {
   header {
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
     padding: 24px;
     display: flex; }
-}
+
   .menu {
     content: url("../images/menu.png"); }
 
